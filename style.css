@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    }
+}
     
 body{
     font-family: "Open Sans";
@@ -24,7 +24,6 @@ body{
 .main-div{
     display:flex;
     flex-wrap: wrap;
-    /* margin-left: 40px; */
     margin-top: 2rem;
     justify-content: space-evenly;
 }
@@ -61,8 +60,6 @@ img{
 .footer{
     display:flex;
     flex-wrap: wrap;
-    margin-bottom:0;
-    padding-bottom:0;
 }
 
 .donate, .volunteer, .location{
@@ -72,7 +69,7 @@ img{
     color:white;
     font-size: 2.5rem;
     margin: 0;
-    margin-bottom:0;
+    margin-bottom: 0;
     font-family: Oswald;
 }
 
@@ -85,13 +82,56 @@ img{
 
 .footer-images{
     height: 400px;
+    max-width: 100%;
+    flex-grow: 1 1 33.33%;
 }
 
-.shade{
+.donate{
+    background: linear-gradient(rgba(168,168,240,.4),rgba(168,168,240,0.7), rgba(168,168,240,.4)), url("starter_files/images/donate.jpg") center/cover;
+    max-width:100%;
+    height:400px;
+    top:0;
+    left:0;   
+}
+
+.volunteer{
+    background: linear-gradient(rgba(168,168,240,.4),rgba(168,168,240,0.7), rgba(168,168,240,.4)), url("starter_files/images/volunteer.jpg") center/cover;
+    max-width:100%;
+    height:400px;
+    top:0;
+    left:0;  
+}
+
+.location{
+    background: linear-gradient(rgba(168,168,240,.4),rgba(168,168,240,0.7), rgba(168,168,240,.4)), url("starter_files/images/location.png") center/cover;
+    max-width:100%;
+    height:400px;
+    top:0;
+    left:0;  
+}
+
+
+
+
+/* Notes from failed attempts */
+/* .shade{
   width: 100%;
-  height: 100%;
+  height: 400px;
   background: rgba(168,168,240,0.5);
   position: absolute;
   top: 0;
   left: 0
-}
+} */
+
+/* .donate{
+    background: linear-gradient(rgba(168,168,240,0.5), rgba(168,168,240,0.5)), no-repeat cover url("starter_files/images/donate.jpg");
+    max-width: 100%;
+  height: 400px; */
+  /* position: absolute; */
+  /* top: 0;
+  left: 0 */
+/* } */
+/* background: linear-gradient(rgba(168,168,240,0.5), rgba(168,168,240,0.5)), no-repeat cover; */
+/* background: linear-gradient(rgba(168,168,240,0.5), rgba(168,168,240,0.5)), no-repeat cover; */
+/* background: linear-gradient(rgba(168,168,240,0.5), rgba(168,168,240,0.5)), no-repeat cover; */
+
